@@ -4,10 +4,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/styles.css" />
   <title>Homework11</title>
-  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <script src="./js/index.js"></script>
+  <header class="header">
+      <p class="toggle">Infinite scroll</p>
+      <div class="onoffswitch">
+        <input
+          type="checkbox"
+          name="onoffswitch"
+          class="onoffswitch-checkbox"
+          id="myonoffswitch"
+          tabindex="0"
+        />
+        <label class="onoffswitch-label" for="myonoffswitch">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+        </label>
+      </div>
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <div class="gallery">
+      <!-- Obraz karty -->
+    </div>
+    <button type="button" class="load-more">Load more</button>
+    <div class="placeholder"></div>
+    <footer class="footer">
+      <p>API from:</p>
+      <a href="https://pixabay.com/" target="_blank" rel="noreferrer noopener">
+        <img
+          src="https://pixabay.com/static/img/logo.png"
+          height="24"
+          width="auto"
+          alt="pixabay logo"
+      /></a>
+    </footer>
+  <script src="./js/index.js" type="module"></script>
 </body>
 </html>
