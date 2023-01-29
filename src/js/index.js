@@ -79,6 +79,7 @@ const searchImg = event => {
   limitReached = false;
   event.preventDefault();
   searchValue = event.target[0].value;
+  disableBtn();
   clearGallery();
   fetchImg(searchValue)
     .then(arr => {
